@@ -1,0 +1,605 @@
+.nav .w{
+    width:100%;
+    height:30px;
+    background-color:#323232; 
+}
+/* 导航栏左侧 */
+.nav .w .logo img{
+    height:18px;
+    margin-top:7px;
+    margin-left:30px;  
+}
+.nav .w .nav-list{
+    margin-left:30px;
+}
+.nav .w .nav-list li{
+    margin-right:20px;
+    margin-top:5px;
+} 
+.nav .w li a{
+    font-weight:700;
+    font-size:14px;
+    color:#ccc;
+}
+.nav .w li a:hover{
+   color:green;
+}
+/* 导航栏右侧 */
+.nav .w .rig-nav{
+    margin-right:30px;
+}
+/* 广告区域 */
+.banner{
+    width:100%;
+    height:550px;
+    background-color: rgb(103, 199, 236);
+    overflow: hidden;
+}
+.banner .w{
+    height:550px;
+    position:relative;
+}
+.banner .w .banner-header{
+    position:absolute;
+    top:20px;
+    right:0;
+}
+.banner .w .banner-header a{
+    color:white;
+    font-size:16px;  
+} 
+.banner .w .banner-header span{
+     margin:10px;
+     color:#fff;
+} 
+.banner .w .banner-title{
+    color:#fff;
+    font-size:42px;
+    padding-top:105px;
+    padding-left:0;
+}
+.banner .w .banner-item{
+    font-size:18px;
+    margin-top:80px;
+}
+.banner .w .banner-item a{
+    margin-right:20px;
+}
+.banner .w .banner-search{
+    height:70px;
+    width:100%;
+    margin-top:25px;
+    border-radius:50px;
+}
+.banner .w .banner-search input:nth-child(1){
+    width:175px;
+    height:70px;
+    text-align:center;
+    color:#1467B6;
+    font-size:16px;
+}
+.banner .w .banner-search input:nth-child(2){
+    width:626px;
+    height:70px;
+    text-align:center;
+    font-size:16px;
+    color:#1467B6;
+}
+.banner .w .banner-search input:nth-child(3){
+    width:175px;
+    height:70px;
+    text-align:center;
+    font-size:16px;
+    color:#fff;
+    background-color:#ffb732; 
+}
+.banner .w .banner-list{
+    margin-top:25px;
+    height:30px;
+}
+.banner .w .banner-list .le-list li{
+    margin-right: 25px;
+    font-size: 14px;
+   
+}
+.banner .w .banner-list .rig-list{
+    font-size: 14px;
+    color:#fff;
+}
+/* 内容区域 */
+.content {
+    overflow: hidden;
+}
+.content h4{
+    color:#323232;
+   font-size:18px;
+   font-weight:400;
+   margin-top:40px;
+}
+.content .content-list{
+    margin-top:30px;
+  
+    position:relative;
+}
+.content .content-list ul{
+    margin-bottom:15px;
+    position:absolute;
+    width:100%;
+    border-bottom: 1px solid #ccc;
+}
+.content .content-list ul li{
+    margin-right:25px; 
+    height:30px;
+    font-size:16px;
+    color:#878787;  
+    cursor:pointer; 
+}
+.content .content-list ul li.active{
+    color:black;
+    height:28px;
+    border-bottom:1px solid red;
+    box-sizing: border-box;
+}
+.content .mangu .content-show{
+  margin-top:100px;
+  height:160px;
+}
+.content .mangu .content-show .le-show{
+    height:160px;
+    width:482px;
+    border:1px solid #ccc;
+}
+.content .mangu .content-show .le-show h3{
+   height:40px;
+   line-height:40px;
+   background-color: rgba(164,226,247,.4);
+   text-align:center;
+   color:#4B96DE;
+   font-size:14px;
+   font-weight:400;
+}
+.content .mangu .content-show .le-show .show1  li{
+     width:33.33%;
+     text-align:center; 
+}
+.content .mangu .content-show .le-show .show1  li h6{
+    font-size:30px;
+    font-weight:400;
+    color:#4B96DE; 
+    line-height: 48px;
+    margin: 27px 0 0;   
+}
+.content .mangu .content-show .le-show .show1  li h6 small{
+   font-size:14px;
+   line-height: 20px;
+}
+.content .mangu .content-show .le-show .show1  li span{
+    color:#878787;
+    font-size:14px;
+}
+.content .mangu .content-show .rig-show{
+    height:160px;
+    width:482px;
+    border:1px solid #ccc;
+}
+.content .mangu .content-show .rig-show h3{
+    height:40px;
+    line-height:40px;
+    background-color:rgba(65,192,116,.072);
+    text-align:center;
+    color:#41C074;
+    font-size:14px;
+    font-weight:400;
+ }
+ .content .mangu .content-show .rig-show .show2 li{
+    width:33.33%;
+    text-align:center;
+ }
+ .content .mangu .content-show .rig-show .show2  li h6{
+    font-size:30px;
+    font-weight:400;
+    color:#41C074; 
+    line-height: 48px;
+    margin: 27px 0 0;   
+}
+.content .mangu .content-show .rig-show .show2  li h6 small{
+    font-size:14px;
+    line-height: 20px;
+ }
+ .content .mangu .content-show .rig-show .show2  li span{
+    color:#878787;
+    font-size:14px;
+}
+
+ .content .mangu p {
+     margin-top:25px;
+     font-size:14px;
+     color:#323232;
+ }
+ /* 卡片区域 */
+ .content .mangu .card {
+    margin-top:50px; 
+ }
+ .content .mangu .card li{
+     margin-right:16px;
+     height:285px;
+     width:234px;
+    
+ }
+ .content .mangu .card li .picture{
+    position:relative;
+ }
+
+ .content .mangu .card li .picture .first2{
+     display:none;
+     background-color:rgba(72,198,238,.5);
+     height:156px;
+     width:234px;
+     position:absolute;
+     left:0;
+     top:0;
+     line-height:156px;
+     text-align: center;
+     color:white;
+     font-size:18px;
+     /* transition: 2s linear ; */
+}
+.content .mangu .card li .picture .first1{
+    display:none;
+    position:absolute;
+    top:0;
+    color:white;
+    z-index:10;
+    right:10px;
+    font-size:20px;
+    border:1px solid blue;
+    background-color: blue;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    text-align: center;
+    font-size:16px;
+    /* transition:all 2s linear; */
+ }
+/* .card li .picture:hover .first1{
+   display:block;
+}
+.card li .picture:hover .first2{
+    display:block;
+}  */
+.content .mangu .card li .item{
+    position:relative;
+}
+.content .mangu .card li .item .second1{
+    display:none;
+    /* background-color: rgba(255, 192, 203, 0.986); */
+   position:absolute;
+   top:45px;
+   z-index:15;
+   color:white;
+   left:50%;
+   margin-left:-60px;  
+}
+.content .mangu .card li .item .second1 i{
+    font-size:22px;
+}
+.content .mangu .card li .item .second2{
+    display:none;
+    background-color:pink;
+    opacity:0.8;
+    height:156px;
+    width:234px;
+    position:absolute;
+    top:0;
+    left:0;
+    color:white;
+    line-height:156px;
+    text-align:center;
+    font-size:18px;
+}
+
+.content .mangu .card li:nth-child(4n){
+     margin-right:0; 
+ } 
+ .content .mangu .card li p{
+    font-size:16px;
+    margin-top:10px;
+    width:234px;
+ }
+ .content .mangu .card  ul li:nth-child(3) p:nth-child(2){
+   /* 实现文字溢出部分显示省略号 */
+	overflow: hidden;
+	/* 在容器末尾处换行 */
+	word-break: break-all;
+	/* 超出部分显示省略号 */
+	text-overflow: ellipsis;
+	/* 显示几行 */
+	-webkit-line-clamp: 1;
+	/* 垂直显示 */
+	-webkit-box-orient: vertical;
+	/* 转换为盒子 */
+	display: -webkit-box;
+   
+ } 
+ .content .mangu.card  ul li:nth-child(7) p:nth-child(2){
+    /* 实现文字溢出部分显示省略号 */
+     overflow: hidden;
+     /* 在容器末尾处换行 */
+     word-break: break-all;
+     /* 超出部分显示省略号 */
+     text-overflow: ellipsis;
+     /* 显示几行 */
+     -webkit-line-clamp: 1;
+     /* 垂直显示 */
+     -webkit-box-orient: vertical;
+     /* 转换为盒子 */
+     display: -webkit-box;
+    
+  } 
+  .content .mangu .card li p:nth-child(3) span:nth-child(1) {
+    color: gold;
+ }
+ .content .mangu .card li p:nth-child(3) span:nth-child(2) {
+    margin:5px; 
+ }
+ .content .mangu .card li p:nth-child(3) span:nth-child(3){
+    font-size:14px;
+ }
+ .content .mangu .card li p:nth-child(4) span:nth-child(1){
+    font-size:18px;
+    font-weight:800;
+ }
+ .content .mangu .card li p:nth-child(4) span:nth-child(2){
+    font-size: 12px;
+    margin-left: 5px;
+ }
+ .content .mangu .card .card-other{
+     border:1px solid #ccc;
+ }
+ /* 其它 */
+ .content .mangu .other{
+    border:1px solid #E5E5E5;
+    margin:0 auto;
+    height:60px;
+    line-height:60px;
+    text-align:center;
+    width:200px;
+ }
+ .content .mangu .other a{
+     color:#000;
+     font-size:18px;
+     margin-left:20px;
+ }
+ .content .mangu .other:hover{
+     background-color: rgba(163, 159, 159, 0.5);
+ }
+ /* 二倍图 */
+ .content .mangu .other .jiantou {
+     width:20px;
+     height:20px;
+     background: url(../img/jd-sprites.png) no-repeat -185px -50px;
+     background-size: 200px 200px;
+     margin-top:24px;
+     margin-left:5px;
+     color:red;
+ }
+/* 歌曲区域 */
+ .song-name .song-introduce{
+    border:1px solid rgba(72,197,239,.5);
+    border-left:7px solid rgba(72,197,239,.5);
+    margin-top:70px;
+    padding:40px;
+ }
+ .song-name .song-introduce h5 {
+     font-weight:400;
+     font-size:18px;
+     margin-bottom:25px;
+ }
+ .song-name .song-introduce p{
+    font-size:16px;
+    /* color:#878787; */
+    /* 透明度 */
+    opacity: 0.6;
+    line-height: 30px;
+ }
+ .song-name .song-show{
+     margin-top:40px;
+     margin-bottom:30px;
+ }
+ .song-name .song-show li{
+     margin-right:8px;
+ }
+ .song-name .song-show li:last-child{
+    margin-right:0;
+}
+.song-name .song-show .one{
+    position:relative;
+}
+ .song-name .song-show .one .item1{
+     position:absolute;
+     left:15px;
+     bottom:15px;
+ }
+ .song-name .song-show .one .item1 p{
+     color:white;
+ }
+ .song-name .song-show .one .item1 p:nth-child(1){
+      font-size:18px;
+ }
+ /* <!-- 大旅馆卡片 --> */
+ .big-hotel-card{
+    margin-top:80px;
+    margin-bottom:30px;
+ }
+ .big-hotel-card p{
+     font-weight:700px;
+     font-size:19px;
+ }
+ .big-hotel-card .main-card .le-hotel-card{
+     margin-top:30px;
+     width:478px;
+ }
+ .big-hotel-card .main-card .le-hotel-card .card{
+     position:relative;
+ }
+ .big-hotel-card .main-card .le-hotel-card .card .three1{
+    display:none;
+    position:absolute;
+    top:0;
+    color:white;
+    z-index:10;
+    right:10px;
+    font-size:20px;
+    background-color: blue;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    text-align: center;
+    font-size:16px;
+}
+.big-hotel-card .main-card .le-hotel-card .card .three2{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgba(72,198,238,.5);
+    width:478px;
+    height:310px;
+    color:white;
+    font-size:18px;
+    line-height:310px;
+    text-align:center;
+}
+.big-hotel-card .main-card .rig-hotel-card .card1{
+    position:relative;
+}
+.big-hotel-card .main-card .rig-hotel-card .card1 .three1{
+        display:none;
+       position:absolute;
+       top:120px;
+       z-index:15;
+       color:white;
+       left:50%;
+       margin-left:-60px;    
+}
+.big-hotel-card .main-card .rig-hotel-card .card1 .three2{
+    display:none;
+    background-color:pink;
+    opacity:0.8;
+    height:310px;
+    width:478px;
+    position:absolute;
+    top:0;
+    left:0;
+    color:white;
+    line-height:310px;
+    text-align:center;
+    font-size:18px;
+}
+ .big-hotel-card .main-card .le-hotel-card p{
+     margin-top:15px;
+ }
+ .big-hotel-card .main-card .le-hotel-card p span{
+     font-size:16px;
+     font-weight:400;
+ }
+ .big-hotel-card .main-card .le-hotel-card p span:nth-child(2){
+    font-size:18px;
+    font-weight:700;
+}
+.big-hotel-card .main-card .le-hotel-card p span:nth-child(2) small{
+    font-size:13px;
+    font-weight:400;
+    margin-left:5px;
+}
+.big-hotel-card .main-card .le-hotel-card p:nth-child(3){
+    margin-top:0;
+}
+.big-hotel-card .main-card .le-hotel-card p:nth-child(3) span:nth-child(1){
+    color:gold;
+}
+.big-hotel-card .main-card .le-hotel-card p:nth-child(3) span:nth-child(2){
+    font-weight:400;
+    margin-left:5px;
+}
+.big-hotel-card .main-card .le-hotel-card p:nth-child(3) span:nth-child(3){
+     font-size:14px;
+     font-weight:400;
+     margin-left:3px;
+}
+.big-hotel-card .main-card .rig-hotel-card{
+    margin-top:30px;
+    width:478px;
+}
+.big-hotel-card .main-card .rig-hotel-card p{
+    margin-top:15px;
+}
+.big-hotel-card .main-card .rig-hotel-card p span{
+    font-size:16px;
+    font-weight:400;
+}
+.big-hotel-card .main-card .rig-hotel-card p span:nth-child(2){
+   font-size:18px;
+   font-weight:700;
+}
+.big-hotel-card .main-card .rig-hotel-card p span:nth-child(2) small{
+   font-size:13px;
+   font-weight:400;
+   margin-left:5px;
+}
+.big-hotel-card .main-card .rig-hotel-card p:nth-child(3){
+   margin-top:0;
+   font-size:14px;
+}
+/* 酒店订购 */
+.hotel-order{
+    margin-top:100px;
+    background-color:white;
+    height:300px;
+}
+.hotel-order h4{
+    font-weight:400;
+    font-size:20px;
+}
+.hotel-order .order-city ul{
+    border-top:1px solid #ccc;
+    margin-top:20px;
+    padding-top:50px;
+}
+.hotel-order .order-city ul li{
+    width:11%;
+    height:45px;
+    line-height:45px;
+}
+.hotel-order .order-city ul li a{
+    color:#666;
+    font-size:14px;
+}
+.hotel-order .order-city ul li a:hover{
+    color:gold;
+}
+.hotel-order .hot-city{
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.hotel-order .hot-city h4{
+    font-weight:400;
+    font-size:20px;
+}
+.hotel-order .hot-city ul{
+    border-top:1px solid #ccc;
+    margin-top:20px;
+    padding-top:50px;
+}
+.hotel-order .hot-city ul li{
+    width:11%;
+    height:45px;
+    line-height:45px;
+}
+.hotel-order .hot-city ul li a{
+    color:#666;
+    font-size:14px;
+}
+.hotel-order .hot-city ul li a:hover{
+    color:gold;
+}
