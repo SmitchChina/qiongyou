@@ -35,7 +35,12 @@ input,img {
 	/* display: block; */
 }
 
-
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
 .cleafix::after {
 	content: "";
 	height: 0;

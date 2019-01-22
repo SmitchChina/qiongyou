@@ -24,7 +24,7 @@ $('#input').mouseleave(function () {
 
 // 下面的社区之类的开始
 $('#shequ').mouseenter(function () {
-    $('#shequ').stop().show(200);
+    $('#shequ').css('color','green').stop().show(200);
 });
 $('#shequ').mouseleave(function () {
     $('#shequ').stop().hide(200);
@@ -89,3 +89,35 @@ $('.menu li').click(function(){
         var index = $(this).index();
         $('#menu li').eq(index).show(200).siblings().hide(200);
 });
+
+var index = 0;
+var timer;
+function autoplay(){
+    timer = setInterval(function(){
+            // 找到轮播当前项，淡出隐藏
+            $('.content ul').eq(index).fadeOut(500);
+           console.log('lalala');
+            index ++;
+            console.log(index);
+            // 限制索引
+            if (index > $('.content ul').length) {
+              index = 0;
+            }
+           
+            // 下一个轮播项淡入显示
+            $('.content ul').eq(index).fadeIn(500);
+            console.log('ssssss');    
+    },1000)
+}
+autoplay();
+$('.content').mouseenter(function () {
+    clearInterval(timer);
+  });
+  //  鼠标离开轮播区，重新启动自动轮播
+  $('.content').mouseleave(function () {
+    autoplay();
+  });
+  $('#showlist span').mouseenter(function(){
+    var index = $(this).index();
+    $('#piclist img').eq(index).css('display','block').siblings().css('display','none');
+  });
