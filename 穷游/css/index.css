@@ -1046,6 +1046,8 @@
   margin-bottom: 10px;
   color: silver;
   font-size: 14px;
+  border-left: 2px solid #10a251;
+  padding-left: 5px;
 }
 .foot ul li dl dd {
   color: #959595;
@@ -1061,26 +1063,6 @@
   height: 16px;
   width: 3px;
   background: #32b95d;
-}
-.foot .f {
-  position: absolute;
-  top: 33px;
-  left: 81px;
-}
-.foot .s {
-  position: absolute;
-  top: 33px;
-  left: 235px;
-}
-.foot .t {
-  position: absolute;
-  top: 33px;
-  left: 393px;
-}
-.foot .fo {
-  position: absolute;
-  top: 33px;
-  left: 545px;
 }
 .foot-last {
   height: 165px;
