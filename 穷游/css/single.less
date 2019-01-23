@@ -1,98 +1,11 @@
-// 头部部分
-.header{
-    padding: 0 30px;
-    box-sizing: border-box;
-    background-color: #323232;
-    height: 30px;
-    width: 100%;
-    line-height: 30px;
-    // 头部左侧部分
-    .header-left{
-        // 头部左侧logo部分
-        div{
-            a{
-                img{
-                    height: 18px;
-                    width: 58px;
-                    padding-bottom: 3px;
-                }
-            }
-        }
-        // 头部左侧导航部分
-        ul{
-            margin-left: 10px;
-            font-weight: 700;
-            li{
-                padding: 0 10px;
-                a{
-                    color: silver;
-                    font-size: 14px;
-                }
-                a:hover{
-                    color: green;
-                }
-            }
-        }
-    }
-    // 头部右侧部分
-    .header-right{
-        // 头部右侧搜索框部分
-        .header-right-input{
-            height: 20px;
-            width: 200px;
-            form{
-                height: 100%;
-                width: 100%;
-                position: relative;
-                .search-text{
-                    padding: 0 0 0 10px;
-                    box-sizing: border-box;
-                    width: 200px;
-                    height: 20px;
-                    border-radius: 5px;
-                    outline-style: none;
-                    border: 0 none;
-                    margin-bottom: 3px;
-                }
-                .search-btn{
-                    height: 20px;
-                    width: 20px;
-                    background-color: white;
-                    outline-style: none;
-                    border: 0 none;
-                    position:absolute;
-                    right: 0;
-                    top: 5px;
-                    border-radius: 0 5px 5px 0;
-                }
-            }
-        }
-        span{
-            color: #c0c0c0;
-            margin-left: 3px;
-            font-size: 16px;
-        }
-        .header-right-pic{
-            span{
-                color:#c0c0c0;
-            }
-        }
-        a{
-            margin-left: 10px;
-            color: #c0c0c0;
-            font-weight: 700;
-        }
-        a:hover{
-            color: green;
-            cursor: pointer;
-        }
-    }
-}
+
 // 导航部分
 .nav{
     height: 50px;
     background-color: #24c295;
+    // 版心部分
     .wraper{
+        // 左侧导航部分
         .nav-left{
             height: 100%;
             li{
@@ -106,6 +19,7 @@
                 }
             }
         }
+        // 右侧导航部分
         .nav-right{
             height: 100%;
             li{
@@ -117,6 +31,11 @@
                     font-size: 16px;
                     padding: 0 12px;
                 }
+                span{
+                    display: block;
+                    margin-top: 15px;
+                    color:#1ca97f;
+                }
             }
         }
     }
@@ -127,6 +46,7 @@
     .search{
         height: 70px;
         line-height: 70px;
+        // 左侧商城部分
         .search-left{
             a{
                 font-size: 28px;
@@ -134,6 +54,7 @@
                 color: #00b081;
             }
         }
+        // 中间搜索框部分
         .search-middle{
             height: 38px;
             width: 500px;
@@ -171,6 +92,7 @@
                 }
             }
         }
+        // 右侧订单及收藏部分
         .search-right{
             height: 100%;
             a:nth-child(1){
@@ -203,6 +125,7 @@
     position: relative;
     width: 100%;
     height: 800px;
+    // 广告大背景图部分
     .banner-img{
         height: 100%;
         width: 100%;
@@ -233,6 +156,7 @@
             }
         }
     }
+    // 大背景图上的最世界图片部分
     .banner-world{
         position: absolute;
         height: 375px;
@@ -240,6 +164,7 @@
         top: 0;
         margin-left: -225px;
     }
+    // 大背景图下导航部分
     .banner-bot{
         height: 136px;
         background-color: white;
@@ -247,6 +172,7 @@
         bottom: 77px;
         left: 50%;
         margin-left: -580px;
+        // 图片导航部分
         .banner-bot-nav{
             display: flex;
             height: 48px;
@@ -276,6 +202,7 @@
                 background:url("../img/杨治平/images/nav_top.png") no-repeat 50% -240px;
             }
         }
+        // 目的地导航部分
         .banner-bot-local{
             padding: 0 35px;
             margin-top: 27px;
@@ -287,6 +214,9 @@
             ul{
                 li{
                     margin-left: 20px;
+                    a{
+                        color:#5d5d5d;
+                    }
                     a:hover{
                         color: #00b081;
                     }
@@ -299,6 +229,7 @@
 .exclusive{
     .wraper{
         height: 943px;
+        // 独家日游title部分
         .exclusive-title{
             h3{
                 font-size: 40px;
@@ -313,6 +244,7 @@
                 padding-top: 10px;
             }
         }
+        // 独家日游特色项目部分
         .exclusive-top{
             height: 470px;
             width: 100%;
@@ -326,6 +258,8 @@
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
+                color: #323232;
+                // 独家日游特色项目简介部分
                 .exclusive-top-simple{
                     position: absolute;
                     left: 0px;
@@ -348,6 +282,7 @@
                         margin-top: 10px;
                     }
                 }
+                // 独家日游鼠标放上盒子显示部分
                 .exclusive-top-details{
                     background-color: white;
                     width: 376px;
@@ -378,6 +313,7 @@
                     }
                 }
             }
+            // 鼠标放上盒子显示效果的样式设置
             a:hover .exclusive-top-details{
                 position: absolute;
                 bottom: 0;
@@ -388,13 +324,16 @@
                 background-size: cover;
                 margin: 0 16px;
                 position: relative;
+                color: #323232;
             }
             a:nth-child(3){
                 background:url(../img/杨治平/images/600x400-2.jpg) -140px top;
                 background-size: cover;
                 position: relative;
+                color: #323232;
             }
         }
+        // 独家日游轮播城市部分
         .exclusive-scroll{
             height: 140px;
             margin-top: 20px;
@@ -404,11 +343,12 @@
             ul{
                 width: 4784px;
                 height: 100%;
-                margin-left: 34px;
+                margin-left: 0px;
+                // 轮播项
                 li{
                     height: 100%;
                     width: 357px;
-                    margin-right: 11px;
+                    margin-right: 40px;
                     a{
                         display: block;
                         height: 100%;
@@ -454,93 +394,75 @@
                     }
                 }
                 li:nth-child(3){
+                    // margin-right: 0;
                     a{
                         background: url("../img/杨治平/images/scrollluoma.jpg") left top;
                         background-size: cover;
                     }
                 }
-                li:nth-child(4){
-                    a{
-                        background: url("../img/杨治平/images/scrollluoma2.jpg") left top;
-                        background-size: cover;
-                    }
-                }
-                li:nth-child(5){
-                    a{
-                        background: url("../img/杨治平/images/scrolldali.jpg") left top;
-                        background-size: cover;
-                    }
-                }
-                li:nth-child(6){
-                    a{
-                        background: url("../img/杨治平/images/scrolldongjing.jpg") left top;
-                        background-size: cover;
-                    }
-                }
-                li:nth-child(7){
-                    a{
-                        background: url("../img/杨治平/images/scrollshanghai.jpg") left top;
-                        background-size: cover;
-                    }
-                }
-                li:nth-child(8){
-                    a{
-                        background: url("../img/杨治平/images/scrolljingdu.jpg") left top;
-                        background-size: cover;
-                    }
-                }
-                li:nth-child(9){
-                    a{
-                        background: url("../img/杨治平/images/scrolljingdu3.jpg") left top;
-                        background-size: cover;
-                    }
-                }
-                li:nth-child(10){
-                    a{
-                        background: url("../img/杨治平/images/scrollbali3.jpg") left top;
-                        background-size: cover;
-                    }
-                }
-                li:nth-child(11){
-                    a{
-                        background: url("../img/杨治平/images/scrollshanghai2.jpg") left top;
-                        background-size: cover;
-                    }
-                }
-                li:nth-child(12){
-                    a{
-                        background: url("../img/杨治平/images/scrolljingdu2.jpg") left top;
-                        background-size: cover;
-                    }
-                }
-                li:nth-child(13){
-                    a{
-                        background: url("../img/杨治平/images/scrollbeijing.jpg") left top;
-                        background-size: cover;
-                    }
-                }
-            }
-            .pub{
-                display: block;
-                height: 140px;
-                width: 24px;
-                font-size: 20px;
-                font-weight: 700;
-                text-align: center;
-                line-height: 140px;
-                background-color: #c2c2c2;
-            }
-            .exclusive-scroll-left{
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-            .exclusive-scroll-right{
-                position: absolute;
-                top: 0;
-                right: 0;
+                // li:nth-child(4){
+                //     a{
+                //         background: url("../img/杨治平/images/scrollluoma2.jpg") left top;
+                //         background-size: cover;
+                //     }
+                // }
+                // li:nth-child(5){
+                //     a{
+                //         background: url("../img/杨治平/images/scrolldali.jpg") left top;
+                //         background-size: cover;
+                //     }
+                // }
+                // li:nth-child(6){
+                //     a{
+                //         background: url("../img/杨治平/images/scrolldongjing.jpg") left top;
+                //         background-size: cover;
+                //     }
+                // }
+                // li:nth-child(7){
+                //     a{
+                //         background: url("../img/杨治平/images/scrollshanghai.jpg") left top;
+                //         background-size: cover;
+                //     }
+                // }
+                // li:nth-child(8){
+                //     a{
+                //         background: url("../img/杨治平/images/scrolljingdu.jpg") left top;
+                //         background-size: cover;
+                //     }
+                // }
+                // li:nth-child(9){
+                //     a{
+                //         background: url("../img/杨治平/images/scrolljingdu3.jpg") left top;
+                //         background-size: cover;
+                //     }
+                // }
+                // li:nth-child(10){
+                //     a{
+                //         background: url("../img/杨治平/images/scrollbali3.jpg") left top;
+                //         background-size: cover;
+                //     }
+                // }
+                // li:nth-child(11){
+                //     a{
+                //         background: url("../img/杨治平/images/scrollshanghai2.jpg") left top;
+                //         background-size: cover;
+                //     }
+                // }
+                // li:nth-child(12){
+                //     a{
+                //         background: url("../img/杨治平/images/scrolljingdu2.jpg") left top;
+                //         background-size: cover;
+                //     }
+                // }
+                // li:nth-child(13){
+                //     a{
+                //         background: url("../img/杨治平/images/scrollbeijing.jpg") left top;
+                //         background-size: cover;
+                //     }
+                // }
             }
         }
+        // 查看更多部分
         .exclusive-more{
             a{
                 display: block;
@@ -553,6 +475,7 @@
                 text-align: center;
                 line-height: 34px;
                 margin-top: 40px;
+                color: #323232;
             }
             a:hover{
                 color:#00b081;
@@ -567,6 +490,7 @@
     width: 100%;
     height: 920px;
     .wraper{
+        // 特色长线标题部分
         .special-title{
             h3{
                 font-size: 40px;
@@ -583,176 +507,297 @@
                 color: white;
             }
         }
-        .special-top{
-            overflow: hidden;
-            margin-left: 79px;
-            width: 1000px;
-            .special-top-banner{
+        // 特色长线版心中的版心相对定位盒子
+        .special-w{
+            height: 100%;
+            position: relative;
+            // 特色长线轮播项部分
+            .special-top{
                 overflow: hidden;
-                height: 565px;
-                width: 3003px;
-                li .special-top-all{
-                    height: 405px;
-                    width: 1001px;
-                    .special-left{
-                        background: url(../img/杨治平/images/special-jian-big.jpg);
-                        background-size: cover;
-                        display: block;
+                margin-left: 79px;
+                width: 1000px;
+                .special-top-banner{
+                    overflow: hidden;
+                    height: 565px;
+                    width: 3003px;
+                    // 轮播项上边图片部分
+                    li .special-top-all{
                         height: 405px;
-                        width: 748px;
-                        position: relative;
-                        .special-introduce{
-                            position: absolute;
-                            bottom: 25px;
-                            left: 30px;
-                            h3{
-                                font-weight: 400;
-                                font-size: 22px;
-                                color: white;
-                                i{
-                                    font-weight: 700;
+                        width: 1001px;
+                        // 轮播项左侧大图片部分
+                        .special-left{
+                            background: url(../img/杨治平/images/special-jian-big.jpg);
+                            background-size: cover;
+                            display: block;
+                            height: 405px;
+                            width: 748px;
+                            position: relative;
+                            // 大图片上的简介部分
+                            .special-introduce{
+                                position: absolute;
+                                bottom: 25px;
+                                left: 30px;
+                                h3{
+                                    font-weight: 400;
                                     font-size: 22px;
                                     color: white;
+                                    i{
+                                        font-weight: 700;
+                                        font-size: 22px;
+                                        color: white;
+                                    }
+                                    span{
+                                        font-size: 18px;
+                                        color: white;
+                                    }
                                 }
-                                span{
-                                    font-size: 18px;
+                                p{
+                                    font-size: 14px;
                                     color: white;
                                 }
                             }
-                            p{
-                                font-size: 14px;
+                            // 大图片上的立即出发部分
+                            .special-now{
+                                position: absolute;
+                                bottom: 25px;
+                                right: 30px;
+                                display: block;
+                                height: 36px;
+                                width: 90px;
+                                border-radius: 20px;
+                                background-color: #00b081;
                                 color: white;
+                                text-align: center;
+                                line-height: 36px;
                             }
                         }
-                        .special-now{
-                            position: absolute;
-                            bottom: 25px;
-                            right: 30px;
+                        // 轮播图右侧三张小图片部分
+                        .special-qing{
+                            height: 405px;
+                            li{
+                                height: 135px;
+                                width: 253px;
+                                background: url(../img/杨治平/images/special-jian-small1.jpg);
+                                background-size: cover;
+                            }
+                            li:nth-child(2){
+                                background: url(../img/杨治平/images/special-jian-small2.jpg);
+                                background-size: cover;
+                            }
+                            li:nth-child(3){
+                                background: url(../img/杨治平/images/special-jian-small3.jpg);
+                                background-size: cover;
+                            }
+                        }
+                    }
+                    // 轮播项下面文字部分
+                    .special-top-text{
+                        height: 160px;
+                        width: 1001px;
+                        margin: 0 auto;
+                        background-color: white;
+                        // 轮播项下面文字部分左侧路线介绍
+                        .special-top-text-left{
+                            padding: 0 44px;
+                            height: 120px;
+                            width: 411px;
+                            margin-top: 20px;
+                            border-right: 1px solid #ccc;
+                            h3{
+                                font-size: 16px;
+                                padding-bottom: 10px;
+                            }
+                            p{
+                                color:#7e7e7e;
+                                line-height: 20px;
+                            }
+                        }
+                        // 轮播项下面文字部分右侧设计师部分
+                        .special-top-text-right{
+                            padding: 0 44px;
+                            height: 120px;
+                            width: 411px;
+                            margin-top: 20px;
+                            img{
+                                height: 80px;
+                                width: 80px;
+                                border-radius: 50%;
+                                margin-right: 20px;
+                            }
+                            h3{
+                                font-size: 16px;
+                                padding-bottom: 10px;
+                            }
+                            p{
+                                color:#7e7e7e;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                    // 印度
+                    li:nth-child(2) .special-top-all{
+                        margin: 0 auto;
+                        height: 405px;
+                        width: 1001px;
+                        .special-left{
+                            background: url(../img/杨治平/images/special-yin-big.jpg);
+                            background-size: cover;
                             display: block;
-                            height: 36px;
-                            width: 90px;
-                            border-radius: 20px;
-                            background-color: #00b081;
+                            height: 405px;
+                            width: 748px;
+                            position: relative;
+                        }
+                        .special-qing{
+                            height: 405px;
+                            li{
+                                height: 135px;
+                                width: 253px;
+                                background: url(../img/杨治平/images/special-yin-small1.jpg);
+                                background-size: cover;
+                            }
+                            li:nth-child(2){
+                                background: url(../img/杨治平/images/special-yin-small2.jpg);
+                                background-size: cover;
+                            }
+                            li:nth-child(3){
+                                background: url(../img/杨治平/images/special-yin-small3.jpg);
+                                background-size: cover;
+                            }
+                        }
+                    }
+                    // 清迈
+                    li:nth-child(3) .special-top-all{
+                        margin: 0 auto;
+                        height: 405px;
+                        width: 1001px;
+                        .special-left{
+                            background: url(../img/杨治平/images/special-qing-big.jpg);
+                            background-size: cover;
+                            display: block;
+                            height: 405px;
+                            width: 748px;
+                            position: relative;
+                        }
+                        .special-qing{
+                            height: 405px;
+                            li{
+                                height: 135px;
+                                width: 253px;
+                                background: url(../img/杨治平/images/special-qing-small1.jpg);
+                                background-size: cover;
+                            }
+                            li:nth-child(2){
+                                background: url(../img/杨治平/images/special-qing-small2.jpg);
+                                background-size: cover;
+                            }
+                            li:nth-child(3){
+                                background: url(../img/杨治平/images/special-qing-small3.jpg);
+                                background-size: cover;
+                            }
+                        }
+                    }
+                }
+            }
+            // 左右箭头公共部分
+            .public{
+                height: 54px;
+                width: 79px;
+                background-color: rgba(0, 0, 0, 0.5);
+                font-size: 40px;
+                text-align: center;
+                color: #ccc;
+                cursor: pointer;
+            }
+            // 文字公共样式部分
+            .text-pub{
+                height: 345px;
+                width: 79px;
+                border-bottom: 1px solid #ccc;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 0 30px;
+                box-sizing: border-box;
+                writing-mode:vertical-lr;
+                span{
+                    width: 18px;
+                    font-size: 15px;
+                    line-height: 15px;
+                    text-align: center;
+                    color: white;
+                    word-wrap: break-word;
+                }
+            }
+            // 左侧箭头部分
+            .special-jianleft{
+                position: absolute;
+                top: 405px;
+                left: 0;
+                .special-left-text{
+                    position: absolute;
+                    left: 0;
+                    top: -345px;
+                }
+            }
+            // 右侧箭头部分
+            .special-jianright{
+                position: absolute;
+                top: 405px;
+                right: 2px;
+                .special-right-text{
+                    position: absolute;
+                    left: 0;
+                    top: -345px;
+                }
+            }
+        }
+        // 特色长线底部特色长线国家介绍
+        .special-bot{
+            height: 140px;
+            width: 1002px;
+            margin: 0 auto;
+            margin-top: 20px;
+            // 泰国
+            li{
+                width: 250px;
+                height: 100%;
+                background-size: cover;
+                a{
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    background: url("../img/杨治平/images/special-bot1.jpg");
+                    div{
+                        background-color: rgba(0, 0, 0, 0.2);
+                        padding: 36px 20px 0;
+                        height: 100%;
+                        box-sizing: border-box;
+                        h3{
+                            font-size: 18px;
                             color: white;
                             text-align: center;
-                            line-height: 36px;
-                        }
-                    }
-                    .special-qing{
-                        height: 405px;
-                        li{
-                            height: 135px;
-                            width: 253px;
-                            background: url(../img/杨治平/images/special-jian-small1.jpg);
-                            background-size: cover;
-                        }
-                        li:nth-child(2){
-                            background: url(../img/杨治平/images/special-jian-small2.jpg);
-                            background-size: cover;
-                        }
-                        li:nth-child(3){
-                            background: url(../img/杨治平/images/special-jian-small3.jpg);
-                            background-size: cover;
-                        }
-                    }
-                }
-                .special-top-text{
-                    height: 160px;
-                    width: 1001px;
-                    margin: 0 auto;
-                    background-color: white;
-                    .special-top-text-left{
-                        padding: 0 44px;
-                        height: 120px;
-                        width: 411px;
-                        margin-top: 20px;
-                        border-right: 1px solid #ccc;
-                        h3{
-                            padding-bottom: 5px;
                         }
                         p{
-                            color:#7e7e7e;
-                            line-height: 20px;
-                        }
-                    }
-                    .special-top-text-right{
-                        padding: 0 44px;
-                        height: 120px;
-                        width: 411px;
-                        margin-top: 20px;
-                        img{
-                            height: 80px;
-                            width: 80px;
-                            border-radius: 50%;
-                        }
-                        h3{
-                            padding-bottom: 5px;
-                        }
-                        p{
-                            color:#7e7e7e;
-                            line-height: 20px;
+                            text-align: center;
+                            color: white;
                         }
                     }
                 }
-                li:nth-child(2) .special-top-all{
-                    margin: 0 auto;
-                    height: 405px;
-                    width: 1001px;
-                    .special-left{
-                        background: url(../img/杨治平/images/special-yin-big.jpg);
-                        background-size: cover;
-                        display: block;
-                        height: 405px;
-                        width: 748px;
-                        position: relative;
-                    }
-                    .special-qing{
-                        height: 405px;
-                        li{
-                            height: 135px;
-                            width: 253px;
-                            background: url(../img/杨治平/images/special-yin-small1.jpg);
-                            background-size: cover;
-                        }
-                        li:nth-child(2){
-                            background: url(../img/杨治平/images/special-yin-small2.jpg);
-                            background-size: cover;
-                        }
-                        li:nth-child(3){
-                            background: url(../img/杨治平/images/special-yin-small3.jpg);
-                            background-size: cover;
-                        }
-                    }
+            }
+            // 意大利
+            li:nth-child(2){
+                a{
+                    background: url("../img/杨治平/images/special-bot2.jpg");
                 }
-                li:nth-child(3) .special-top-all{
-                    margin: 0 auto;
-                    height: 405px;
-                    width: 1001px;
-                    .special-left{
-                        background: url(../img/杨治平/images/special-qing-big.jpg);
-                        background-size: cover;
-                        display: block;
-                        height: 405px;
-                        width: 748px;
-                        position: relative;
-                    }
-                    .special-qing{
-                        height: 405px;
-                        li{
-                            height: 135px;
-                            width: 253px;
-                            background: url(../img/杨治平/images/special-qing-small1.jpg);
-                            background-size: cover;
-                        }
-                        li:nth-child(2){
-                            background: url(../img/杨治平/images/special-qing-small2.jpg);
-                            background-size: cover;
-                        }
-                        li:nth-child(3){
-                            background: url(../img/杨治平/images/special-qing-small3.jpg);
-                            background-size: cover;
-                        }
-                    }
+            }
+            // 马来西亚
+            li:nth-child(3){
+                a{
+                    background: url("../img/杨治平/images/special-bot3.jpg");
+                }
+            }
+            // 肯尼亚
+            li:nth-child(4){
+                a{
+                    background: url("../img/杨治平/images/special-bot4.jpg");
                 }
             }
         }
@@ -784,10 +829,12 @@
 .qHome{
     height: 800px;
     position: relative;
+    width: 100%;
     .qHome-title{
         padding: 40px 0;
+        text-align: center;
+        width: 100%;
         position: absolute;
-        top: 0;
         z-index: 10;
         h3{
             text-align: center;
@@ -798,18 +845,510 @@
         p{
             text-align: center;
             color: white;
+            margin-top: 10px;
         }
     }
-    ul{
+    .qHome-middle{
         position: absolute;
         z-index: 1;
         width: 100%;
         height: 100%;
-        li{
+        li:nth-child(1){
+            position: absolute;
+            z-index: 10;
             height: 100%;
             width: 100%;
             background: url("../img/杨治平/images/home-qing-bg.jpg");
             background-size: cover;
+            overflow: hidden;
+            .wraper{
+                margin-top: 153px;
+                .home-left{
+                    margin-left: 100px;
+                }
+                .home-right{
+                    padding-left: 28px;
+                    width: 530px;
+                    h3{
+                        font-size: 23px;
+                        padding-bottom: 10px;
+                        color: white;
+                    }
+                    p{
+                        color: white;
+                    }
+                    .home-right-pub{
+                        width: 530px;
+                        height: 230px;
+                        margin-top: 20px;
+                        display: block;
+                    }
+                    .home-right-one{
+                        background: url("../img/杨治平/images/home-qing2.jpg");
+                        background-size: cover;
+                        position: relative;
+                        width: 100%;
+                        height: 230px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        .home-hover{
+                            text-align: center;
+                            position: relative;
+                            padding: 0 20px;
+                            height: 100%;
+                            width: 100%;
+                            box-sizing: border-box;
+                            background-color: rgba(0,0,0,.2);
+                            span{
+                                width: 490px;
+                                display: block;
+                                font-size: 22px;
+                                color: white;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%,-50%); 
+                            }
+                        }
+                        .home-hover-bot{
+                            position: absolute;
+                            bottom: -65px;
+                            background-color: white;
+                            height: 65px;
+                            width: 100%;
+                            padding-left: 20px;
+                            padding-right: 30px;
+                            box-sizing: border-box;
+                            span:nth-child(1){
+                                display: block;
+                                font-size: 22px;
+                                height: 30px; 
+                            }
+                            span:nth-child(2){
+                                span:nth-child(1){
+                                    font-size: 12px;
+                                    color: #858484;
+                                    margin-top: 15px;
+                                }
+                                span:nth-child(2){
+                                    font-size: 12px;
+                                    em{
+                                        font-style: none;
+                                        font-size: 25px;
+                                        color: red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .home-right-one:hover .home-hover-bot{
+                        position: absolute;
+                        bottom: 0;
+                        transition: 1s linear;
+                    }
+                    .home-right-two{
+                        background: url("../img/杨治平/images/home-qing3.jpg");
+                        background-size: cover;
+                        position: relative;
+                        width: 100%;
+                        height: 230px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        .home-hover{
+                            text-align: center;
+                            position: relative;
+                            padding: 0 20px;
+                            height: 100%;
+                            width: 100%;
+                            box-sizing: border-box;
+                            background-color: rgba(0,0,0,.2);
+                            span{
+                                width: 490px;
+                                display: block;
+                                font-size: 22px;
+                                color: white;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%,-50%); 
+                            }
+                        }
+                        .home-hover-bot{
+                            position: absolute;
+                            bottom: -65px;
+                            background-color: white;
+                            height: 65px;
+                            width: 100%;
+                            padding-left: 20px;
+                            padding-right: 30px;
+                            box-sizing: border-box;
+                            span:nth-child(1){
+                                display: block;
+                                font-size: 18px;
+                                height: 30px;
+                                line-height: 33px; 
+                                color: #333;
+                            }
+                            span:nth-child(2){
+                                font-size: 12px;
+                                em{
+                                    font-style: none;
+                                    font-size: 25px;
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+                    .home-right-two:hover .home-hover-bot{
+                        position: absolute;
+                        bottom: 0;
+                        transition: 1s linear;
+                    }
+                }
+            }
+        }
+        li:nth-child(2){
+            position: absolute;
+            z-index: 10;
+            height: 100%;
+            width: 100%;
+            background: url("../img/杨治平/images/home-jing-bg.jpg");
+            background-size: cover;
+            overflow: hidden;
+            .wraper{
+                margin-top: 153px;
+                .home-left{
+                    margin-left: 100px;
+                }
+                .home-right{
+                    padding-left: 28px;
+                    width: 530px;
+                    h3{
+                        font-size: 23px;
+                        padding-bottom: 10px;
+                        color: white;
+                    }
+                    p{
+                        color: white;
+                    }
+                    .home-right-pub{
+                        width: 530px;
+                        height: 230px;
+                        margin-top: 20px;
+                        display: block;
+                    }
+                    .home-right-one{
+                        background: url("../img/杨治平/images/home-jing2.jpg");
+                        background-size: cover;
+                        position: relative;
+                        width: 100%;
+                        height: 230px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        .home-hover{
+                            text-align: center;
+                            position: relative;
+                            padding: 0 20px;
+                            height: 100%;
+                            width: 100%;
+                            box-sizing: border-box;
+                            background-color: rgba(0,0,0,.2);
+                            span{
+                                width: 490px;
+                                display: block;
+                                font-size: 22px;
+                                color: white;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%,-50%); 
+                            }
+                        }
+                        .home-hover-bot{
+                            position: absolute;
+                            bottom: -65px;
+                            background-color: white;
+                            height: 65px;
+                            width: 100%;
+                            padding-left: 20px;
+                            padding-right: 30px;
+                            box-sizing: border-box;
+                            span:nth-child(1){
+                                display: block;
+                                font-size: 22px;
+                                height: 30px; 
+                            }
+                            span:nth-child(2){
+                                span:nth-child(1){
+                                    font-size: 12px;
+                                    color: #858484;
+                                    margin-top: 15px;
+                                }
+                                span:nth-child(2){
+                                    font-size: 12px;
+                                    em{
+                                        font-style: none;
+                                        font-size: 25px;
+                                        color: red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .home-right-one:hover .home-hover-bot{
+                        position: absolute;
+                        bottom: 0;
+                        transition: 1s linear;
+                    }
+                    .home-right-two{
+                        background: url("../img/杨治平/images/home-jing3.jpg");
+                        background-size: cover;
+                        position: relative;
+                        width: 100%;
+                        height: 230px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        .home-hover{
+                            text-align: center;
+                            position: relative;
+                            padding: 0 20px;
+                            height: 100%;
+                            width: 100%;
+                            box-sizing: border-box;
+                            background-color: rgba(0,0,0,.2);
+                            span{
+                                width: 490px;
+                                display: block;
+                                font-size: 22px;
+                                color: white;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%,-50%); 
+                            }
+                        }
+                        .home-hover-bot{
+                            position: absolute;
+                            bottom: -65px;
+                            background-color: white;
+                            height: 65px;
+                            width: 100%;
+                            padding-left: 20px;
+                            padding-right: 30px;
+                            box-sizing: border-box;
+                            span:nth-child(1){
+                                display: block;
+                                font-size: 22px;
+                                height: 30px; 
+                            }
+                            span:nth-child(2){
+                                span:nth-child(1){
+                                    font-size: 12px;
+                                    color: #858484;
+                                    margin-top: 15px;
+                                }
+                                span:nth-child(2){
+                                    font-size: 12px;
+                                    em{
+                                        font-style: none;
+                                        font-size: 25px;
+                                        color: red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .home-right-two:hover .home-hover-bot{
+                        position: absolute;
+                        bottom: 0;
+                        transition: 1s linear;
+                    }
+                }
+            }
+        }
+        li:nth-child(3){
+            position: absolute;
+            z-index: 10;
+            height: 100%;
+            width: 100%;
+            background: url("../img/杨治平/images/home-huang-bg.jpg");
+            background-size: cover;
+            overflow: hidden;
+            .wraper{
+                margin-top: 153px;
+                .home-left{
+                    margin-left: 100px;
+                }
+                .home-right{
+                    padding-left: 28px;
+                    width: 530px;
+                    h3{
+                        font-size: 23px;
+                        padding-bottom: 10px;
+                        color: white;
+                    }
+                    p{
+                        color: white;
+                    }
+                    .home-right-pub{
+                        width: 530px;
+                        height: 230px;
+                        margin-top: 20px;
+                        display: block;
+                    }
+                    .home-right-one{
+                        background: url("../img/杨治平/images/home-huang2.jpg");
+                        background-size: cover;
+                        position: relative;
+                        width: 100%;
+                        height: 230px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        .home-hover{
+                            text-align: center;
+                            position: relative;
+                            padding: 0 20px;
+                            height: 100%;
+                            width: 100%;
+                            box-sizing: border-box;
+                            background-color: rgba(0,0,0,.2);
+                            span{
+                                width: 490px;
+                                display: block;
+                                font-size: 22px;
+                                color: white;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%,-50%); 
+                            }
+                        }
+                        .home-hover-bot{
+                            position: absolute;
+                            bottom: -65px;
+                            background-color: white;
+                            height: 65px;
+                            width: 100%;
+                            padding-left: 20px;
+                            padding-right: 30px;
+                            box-sizing: border-box;
+                            span:nth-child(1){
+                                display: block;
+                                font-size: 18px;
+                                height: 30px;
+                                line-height: 33px; 
+                                color: #333;
+                            }
+                            span:nth-child(2){
+                                font-size: 12px;
+                                em{
+                                    font-style: none;
+                                    font-size: 25px;
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+                    .home-right-one:hover .home-hover-bot{
+                        position: absolute;
+                        bottom: 0;
+                        transition: 1s linear;
+                    }
+                    .home-right-two{
+                        background: url("../img/杨治平/images/home-huang3.jpg");
+                        background-size: cover;
+                        position: relative;
+                        width: 100%;
+                        height: 230px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        .home-hover{
+                            text-align: center;
+                            position: relative;
+                            padding: 0 20px;
+                            height: 100%;
+                            width: 100%;
+                            box-sizing: border-box;
+                            background-color: rgba(0,0,0,.2);
+                            span{
+                                width: 490px;
+                                display: block;
+                                font-size: 22px;
+                                color: white;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%,-50%); 
+                            }
+                        }
+                        .home-hover-bot{
+                            position: absolute;
+                            bottom: -65px;
+                            background-color: white;
+                            height: 65px;
+                            width: 100%;
+                            padding-left: 20px;
+                            padding-right: 30px;
+                            box-sizing: border-box;
+                            span:nth-child(1){
+                                display: block;
+                                font-size: 22px;
+                                height: 30px; 
+                            }
+                            span:nth-child(2){
+                                span:nth-child(1){
+                                    font-size: 12px;
+                                    color: #858484;
+                                    margin-top: 15px;
+                                }
+                                span:nth-child(2){
+                                    font-size: 12px;
+                                    em{
+                                        font-style: none;
+                                        font-size: 25px;
+                                        color: red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .home-right-two:hover .home-hover-bot{
+                        position: absolute;
+                        bottom: 0;
+                        transition: 1s linear;
+                    }
+                }
+            }
+        }
+    }
+    .qHome-slide{
+        width: 100px;
+        height: 600px;
+        position: absolute;
+        z-index: 100;
+        left: 55px;
+        top: 153px;
+        background-color: #333;
+        ul{
+            margin-top: 210px;
+            padding: 0 10px;
+            li{
+                height: 64px;
+                line-height: 64px;
+                text-align: center;
+                width: 80px;
+                box-sizing: border-box;
+                cursor: pointer;
+                color: #858585;
+            }
+            .active{
+                font-size: 20px;
+                color:white;
+            }
+            li:nth-child(2){
+                border-bottom: 1px solid #ccc;
+                border-top: 1px solid #ccc;
+            }
         }
     }
 }
@@ -1072,5 +1611,35 @@
                 }
             }
         }
+    }
+}
+// 固定返回顶部部分
+.fixed{
+    position: fixed;
+    right: 40px;
+    bottom:140px;
+    border:1px solid #ccc;
+    box-shadow: 0px 0px 5px #ccc;
+    z-index:100000;
+    background-color: #fff;
+    li{
+        padding:7px 5px 5px 5px;
+        text-align:center;
+        border-bottom:1px solid #ccc;
+        color:#b2b2b2;
+        i{
+            font-size:20px;
+            display: block;
+        }
+        p{
+            font-size:12px;
+            transform:scale(0.8);
+            margin-top:7px;
+        }
+    }
+    li:hover{
+        cursor: pointer;
+        background-color: #28b76c;
+        color: #fff;
     }
 }

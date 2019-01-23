@@ -59,12 +59,13 @@ $('.smallimg')
     .css('display','none');
     console.log(index)
      //淡入淡出效果
-    $('.mainImg .bg')
+   var num= $('.mainImg .bg')
     .eq(index)
-    .fadeIn(200,'linear')
+    .fadeIn(400,'linear')
     .siblings()
     .eq(index)
-    .fadeOut(200,'linear')
+    .fadeOut(400,'linear')
+    console.log(num)
 
 });
 
@@ -72,30 +73,41 @@ $('.smallimg')
 // 1 小图显示边框三角形
 // 2 大图指定轮动
 
-// var index = 0;
-// setInterval(fn,500)
-// function fn (){
-//    index++;
-//    if(index>4){
-//        index = 0;
-//    }
-//    $('.mainImg .bg')
-//    .eq(index)
-//    .fadeIn(190,'linear')
-//    .siblings()
-//    .eq(index)
-//    .fadeOut(190,'linear')
-// }
+var index = 0;
+ var dsq = setInterval(fn,2000)
+function fn (){
+   index++;
+   if(index>4){
+       index = 0;
+   }
+   $('.mainImg .bg')
+   .eq(index)
+   .fadeIn(390,'linear')
+   .siblings()
+   .fadeOut(190,'linear')
+
+   $('.smallimg')
+   .find('li')
+   .eq(index)
+   .css('border','2px solid #e0ffff')
+    .children('.triangleimg')
+    .css('display','block')  //显示边框和三角形
+    .parent('li')      ////隐藏边框和三角形
+    .siblings('li')
+    .css('border','none')
+    .children('.triangleimg')
+    .css('display','none');
+    console.log(index)
+}
+
+//停止定时器
+$('mainImg').mouseenter (function(){
+    clearInterval('dsq')
+});
 
 
-// $('.smallimg')
-// .find('li')
-// .mouseleave(function(){
-//     var index = $(this).index();
-//     $('.mainImg .bg')
-   
-// })
 
+// 问题遗留  鼠标不能再dl上面入
 // 鼠标进入显示版面列表
 $('.rightWord')
 .find('.item1')
@@ -113,8 +125,72 @@ $('.rightWord')
  .fadeOut(600,'linear');
 });
 
-// 问题遗留  鼠标不能再dl上面入
 
+
+//tab切换li下表面底边框
+$('.tabList li').click(function () { 
+    var index = $(this).index();
+    $(this)
+    .css( 'border-bottom' ,'1px solid #10b041')
+    .siblings()
+    .css('border-bottom','none');
+    $('.tabWord')
+    .children('.tab')
+    .eq(index)
+    .css('display','block')
+    .siblings('.tab')
+    
+    .css('display','none')
+})
+
+//点击x删除固定定位p标签
+$('.banner')
+.children('p')
+.click(function () {
+ $('.banner')
+ .css('display','none');
+});
+
+
+//返回顶部操作
+// var v1 = $('.tabList').offset().top;
+$(window).scroll (function () {
+    // 滚轮滚动距离
+    var v2 = $(window).scrollTop();
+    // var v3 = $('.returnTop').scrollTop()
+    //判断
+    if ( v2 >= 500){
+        // 回到顶部要显示
+        $('.returnTop').show();
+        //  v3 === (v2);
+    }else{
+        // 回到顶部要显示
+        $('.returnTop').hide();
+
+    }
+
+
+});
+//返回顶部操作
+$('.returnTop')
+.find('.li1')
+.click(function () {
+$(window).scrollTop(0)
+});
+
+
+//扫码操作
+$('.returnTop')
+.find('.li2')
+.mouseenter(function() {
+  $('.divh5').css('display','block')
+});
+
+$('.returnTop')
+.find('.li2')
+.mouseleave(function() {
+  $('.divh5').css('display','none')
+});
 
 
 
