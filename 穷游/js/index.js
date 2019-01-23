@@ -86,40 +86,15 @@ $('#app').mouseleave(function () {
 // 下面社区之类的结束
 // 菜单栏的跳转
 $('.menu li').click(function(){
-        var index = $(this).index();
-        $('#menu li').eq(index).show(200).siblings().hide(200);
+        var indexv = $(this).index();
+        $('#menu li').eq(indexv).show(200).siblings().hide(200);
 });
 
-var index = 0;
-var timer;
-function autoplay(){
-    timer = setInterval(function(){
-            // 找到轮播当前项，淡出隐藏
-            $('.content ul').eq(index).fadeOut(500);
-           console.log('lalala');
-            index ++;
-            console.log(index);
-            // 限制索引
-            if (index > $('.content ul').length) {
-              index = 0;
-            }
-           
-            // 下一个轮播项淡入显示
-            $('.content ul').eq(index).fadeIn(500);
-            console.log('ssssss');    
-    },1000)
-}
-autoplay();
-$('.content').mouseenter(function () {
-    clearInterval(timer);
-  });
-  //  鼠标离开轮播区，重新启动自动轮播
-  $('.content').mouseleave(function () {
-    autoplay();
-  });
+
+
   $('#showlist span').mouseenter(function(){
-    var index = $(this).index();
-    $('#piclist img').eq(index).css('display','block').siblings().css('display','none');
+    var indext = $(this).index();
+    $('#piclist img').eq(indext).css('display','block').siblings().css('display','none');
   });
 
 

@@ -138,3 +138,57 @@ $(".content-list").find("li").click(function () {
      $(".city").find(".content-city").eq(num).stop().fadeIn(100).siblings().stop().fadeOut(100);
 
 })
+
+
+// 返回顶部
+// 固定返回顶部的动画效果
+// 鼠标进入的时候i标签可以动
+var li = document.querySelectorAll('.fixed li i');
+var timer;
+console.log(li)
+$('.fixed li').mouseenter(function( ) { 
+    var index = $(this).index();
+    timer = setTimeout(function() {
+        // $(this).children('i').css('transform','rotateY('+30+'deg'+')');
+        li[index].style.transform = 'rotate(-20deg)';
+    },100)
+    timer = setTimeout(function() {
+        // $(this).children('i').css('transform','rotateY('+30+'deg'+')');
+        li[index].style.transform = 'rotate(20deg)';
+    },200)
+    timer = setTimeout(function() {
+        // $(this).children('i').css('transform','rotateY('+30+'deg'+')');
+        li[index].style.transform = 'rotate(-10deg)';
+    },300)
+    timer = setTimeout(function() {
+        // $(this).children('i').css('transform','rotateY('+30+'deg'+')');
+        li[index].style.transform = 'rotate(10deg)';
+    },400)
+    timer = setTimeout(function() {
+        // $(this).children('i').css('transform','rotateY('+30+'deg'+')');
+        li[index].style.transform = 'rotate(0deg)';
+    },450)
+})
+
+
+// 注册页面上拉事件
+$('.fixed').css('display','none');
+$(window).scroll(function() { 
+    // 获取页面的上拉高度
+    var height = $('html,body').scrollTop();
+    if(height >= 200) {
+        $('.fixed').stop().fadeIn(300,'linear');
+    } else {
+        $('.fixed').stop().fadeOut(300,'linear');
+    }
+})
+
+// 点击返回顶部，立即回到页面顶部
+$('.fixed li').eq(0).click(function() {
+    // 这里为了考虑兼容性，需要把HTML和body都写上
+    $('html,body')
+        .stop()
+        .animate({
+            scrollTop:0,
+        },400,'linear')
+})
